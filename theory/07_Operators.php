@@ -62,6 +62,5 @@ echo "And: " . $result; echo "<br>";
 $result = 1==1 || 1==2;
 echo "Or: " . $result; echo "<br>";
 ?> 
-
 </body>
 </html>
