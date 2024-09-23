@@ -5,7 +5,7 @@ require './exercises/P10_DivisionFormula.php';
 class P10_DivisionFormulaTest extends TestCase {
     public function testMain() {
         // Define the expected output
-        $expectedOutput = "20 / 4 = 5\n";
+        $expectedOutput = "10 / 4 = 2.5\n";
 
         // Capture the output of the main method
         $this->expectOutputString($expectedOutput);
