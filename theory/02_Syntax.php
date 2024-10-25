@@ -11,11 +11,12 @@ echo "Hello World!<br>";
 
 <?php
 // PHP CASE SENSITIVITY
-ECHO "Hello World!<br>";
-echo "Hello World!<br>";
-EcHo "Hello World!<br>";
+ECHO "Hello World1!<br>";
+echo "Hello World2!<br>";
+EcHo "Hello World3!<br>";
 
 $color = "red";
+$COLOR = "yellow";
 echo "My car is " . $color . "<br>";
 echo "My house is " . $COLOR . "<br>";
 echo "My boat is " . $coLOR . "<br>";

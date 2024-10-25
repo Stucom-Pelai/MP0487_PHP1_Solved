@@ -5,7 +5,7 @@
 <?php
 // with double quote show value
 $x = "John";
-print "Hello $x<br>";
+print "Hello" . $x . "<br>";
 ?>
 
 <?php

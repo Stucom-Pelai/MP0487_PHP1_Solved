@@ -19,13 +19,22 @@
         echo "Both conditions are true";
     }
     // with OR
-    if ($a > $c || $a > $c) {
+    if ($a > $c || $a > $b) {
         echo "One condition is true";
     }
 
     // Ternary
     $a = 1;
     $b = $a < 2 ? "Hello" : "Good Bye";
+
+    if ($a < 2) {
+        # code...
+        $b = "Hello";
+    } else {
+        # code...
+        $b = "Good Bye";
+    }
+    
 
     // if else(nested)
     $startYear = 70;
@@ -36,18 +45,44 @@
     } else {
         $century = 20;
     }
+    $day = 7;
 
     // STATEMENT SWITCH
-    switch ($day) {
-        case 6:
-            echo "Monday";
+    if ($day <= 7) {
+        # code...
+        switch ($day) {
+            // si $day = 6
+            case 6:
+                echo "Saturday";
+                break;
+            case 7:
+                echo "Sunday";
+                // break;
+            case 8:
+                echo "Monday";
+                // break;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                echo "Workday";
+                break;           
+        }    
+    }
+
+    switch ($variable) {
+        case 'value':
+            # code...
             break;
-        case 7:
-            echo "Tuesday";
+        
         default:
-            echo "Workday";
+            # code...
             break;
     }
+    
+    
+
 
     // LOOPS
     // for, when you know how many times you want to iterate.
@@ -61,8 +96,7 @@
         $i++;  // Increment $i to avoid infinite loop
     }
 
-    // do while, condition is checked after the loop, 
-    // ensuring the loop runs at least once.
+    // do...while, ensuring the loop runs at least once.
     $i = 1;
     do {
         echo "Number: $i<br>";

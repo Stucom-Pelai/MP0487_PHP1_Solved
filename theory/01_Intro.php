@@ -6,7 +6,11 @@
 <h2>this is php</h2>
 
 <?php
-$txt = "Hello!";
+$txt = "Hola!";//select * from table.saludo
+
+
+
+
 echo "<p>$txt!</p>";
 echo '<p>$txt!</p>'; 
 echo phpversion();

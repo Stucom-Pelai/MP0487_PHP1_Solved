@@ -3,16 +3,23 @@
 <body>
 
 <?php
-// x is integer
+// x as string
+$x = "Hello"; // using double quote
+var_dump($x);echo "<br>";
+$x = 'Bye';  // using single quote
+var_dump($x);echo "<br>";
+
+// x as integer
 $x = 5;
-var_dump($x);
-echo "<br>";
+var_dump($x);echo "<br>";
 
-// x changes to string
-$x = "Hello";
-var_dump($x);
+// x as float
+$x = 3.1415;
+var_dump($x);echo "<br>";
+
+// x as boolean
+$x = true;
+var_dump($x);echo "<br>";
 ?> 
-
-
 </body>
 </html>
